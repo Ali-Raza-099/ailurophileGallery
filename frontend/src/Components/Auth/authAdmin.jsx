@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import userService from "../Services/userService";
 
 const Admin = (props) => {
-    let navigate = useNavigate();
+  let navigate = useNavigate();
   React.useEffect(() => {
     if (!userService.isAdmin()) {
       navigate("/ailurophile-gallery/login", { replace: true });

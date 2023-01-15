@@ -1,4 +1,4 @@
-import GenericService from './GenericService'
+import GenericService from "./GenericService";
 class PicturesService extends GenericService {
   // constructor() {
   //   super();
@@ -6,7 +6,7 @@ class PicturesService extends GenericService {
   addPicture = (data) => this.post("picture/", data);
   deletePicture = (_id) => this.delete("picture/" + _id);
   updatePicture = (_id, data) => this.put("picture/" + _id, data);
-  getPicture = (page = 1) => this.get("picture?page="+page);
+  getPicture = (page = 1) => this.get("picture?page=" + page);
   getSinglePicture = (id) => this.get("picture/" + id);
 }
 
